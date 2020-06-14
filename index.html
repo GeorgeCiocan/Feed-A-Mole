@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <aside>
+            <button onclick="">New game!</button>
+            <p id="lives">Lives left: </p>
+            <p id="score">Your score: </p>
+        </aside>
+        <section class="playground">
+            <header>
+                <div class="worm-box">
+                    <div class="worm-container" style="width: 3%">
+                        <img class="worm" src="./pictures/worm.png" alt="worm score meter">
+                    </div>
+                </div>
+            </header>
+            <main>
+            <div class="row">
+                <div class="row-column" id="first-hole">
+                    <img data-index="1" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+                <div class="row-column" id="second-hole">
+                    <img data-index="2" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+                <div class="row-column" id="third-hole">
+                    <img data-index="3" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+                <div class="row-column" id="fourth-hole">
+                    <img data-index="4" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-column" id="fifth-hole">
+                    <img data-index="5" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+                <div class="row-column" id="sixth-hole">
+                    <img data-index="6" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+                <div class="row-column" id="seventh-hole">
+                    <img data-index="7" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+                <div class="row-column" id="eighth-hole">
+                    <img data-index="8" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-column" id=ninth-hole>
+                    <img data-index="9" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+                <div class="row-column" id="tenth-hole">
+                    <img data-index="10" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+                <div class="row-column" id="eleventh-hole">
+                    <img data-index="11" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+                <div class="row-column" id="twelfth-hole">
+                    <img data-index="12" src="./pictures/mole-hungry.png" alt="mole" class="hidden mole">
+                </div>
+            </div>
+            </main>
+        <footer>
+
+        </footer>
+    </section>
+    <section class="underground hidden">
+        <img class="game-over" src="./pictures/win.png" alt="The game has finished">
+    </section>
+    <script src="game.js"></script>
+</body>
+</html>

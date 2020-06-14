@@ -1,0 +1,192 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    background-color: #c0c86d;
+    
+}
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0;
+    background: no-repeat center fixed;
+    background-image: url(./pictures/background.png);
+    background-size: contain;
+    height: 100vh;
+
+}
+
+aside {
+    flex-basis: 17%; 
+    text-align: center;
+    align-self: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-self: center;
+    flex-shrink: 0;
+    width: 58rem;
+    height: 42rem;
+}
+
+.playground {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 70%;
+    justify-content: space-between;
+    cursor: url(./pictures/cursor.png), default;
+}
+
+.row {
+    flex-basis: 27%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    
+}
+
+.row-column {
+    flex-basis: 20%;
+    background-color: black;
+    border-radius: 35rem;
+    overflow: visible;
+}
+
+.worm-box {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.worm-container {
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    text-align: center;
+}
+
+.worm {
+    width: 58rem;
+}
+
+.mole {
+    height: 110%;
+    width: 110%;
+    margin: -0.5rem;
+}
+
+.underground {
+    justify-content: space-between;
+    flex-basis: 70%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.game-over {
+    max-height: 42rem;    
+}
+
+
+.hungry {
+    cursor: url(./pictures/cursor-worm.png), default;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    color: #c0c86d;
+    font-size: large;
+    text-shadow: 0 1px 0 rgba(255,255,255,.1);
+    line-height: 3rem;
+    width: 100%;
+    padding-right: 25px;
+    background-image: linear-gradient(#2e3537,#424748);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.6),
+        inset 0 -1px 0 rgba(0,0,0,.3),
+        inset 0 0 0px 1px rgba(0,0,0,.1),
+        0 0 1px  rgba(0,0,0,.5),
+        0 2px 2px rgba(0,0,0,.4);
+    border-radius: 30rem;
+}
+
+
+
+button {
+	color: #00ccff;
+	text-shadow: 0 1px 0 rgba(255,255,255,.1);
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 2rem;
+	letter-spacing: 0.2rem;
+	line-height: 3rem;
+    border-radius: 30rem;	
+	background-image: linear-gradient(#2e3537,#424748);
+	box-shadow:
+			inset 0 1px 0 rgba(255,255,255,.6),
+			inset 0 -1px 0 rgba(0,0,0,.3),
+			inset 0 0 0px 1px rgba(0,0,0,.1),
+			0 0 1px  rgba(0,0,0,.5),
+            0 2px 2px rgba(0,0,0,.4);
+    outline: none;
+}
+
+button:after{	
+	margin-left: 50%;
+	content: '';
+	display: block;
+	border-radius: 30px;
+	background-image: linear-gradient(#2af1fc,#17b2e6);
+	box-shadow:
+			0 -1px 1px rgba(0,0,0,.7), 
+			0 1px 1px rgba(255,255,255,.4),
+			0 0 1px 1px rgba(0,0,0,.3),
+			inset 0 0px 3px rgba(0,0,0,.4),
+			inset 0 1px 2px rgba(0,0,0,.6);
+	position: absolute;
+    z-index: -1;
+    outline: none;
+}
+
+button:hover{
+    outline: none;
+	color: #c0c86d;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.8);
+	background-image: linear-gradient(#545454,#373738);
+}
+
+button:hover:after{
+    outline: none;
+	box-shadow:
+			0 -1px 1px rgba(0,0,0,.7), 
+			0 1px 1px rgba(255,255,255,.4),
+			0 0 1px 1px rgba(0,0,0,.3),
+			inset 0 0px 3px rgba(0,0,0,.4),
+			inset 0 1px 2px rgba(0,0,0,.6),
+			0 0 15px 5px rgba(0, 255, 255,.2);
+}
+
+button:active{
+    outline: none;
+	color: #00ccff;
+	text-shadow:0 -1px 0 rgba(0,0,0,.3),0 0px 30px rgba(0,255,255,.7);	
+    background:#333;
+    box-shadow:
+		0 -1px 1px rgba(0,0,0,.7), 
+		0 1px 0px rgba(255,255,255,.4),
+		inset 0 3px 3px rgba(0,0,0,.7), 
+		inset 0 0 4px rgba(0,0,0,.9), 0 0 0 black
+}
